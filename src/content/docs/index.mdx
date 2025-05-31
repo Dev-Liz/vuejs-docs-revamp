@@ -1,36 +1,204 @@
 ---
-title: Welcome to Starlight
+title: The Progressive JavaScript Framework
 description: Get started building your docs site with Starlight.
 template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
+  tagline: An approachable, performant and versatile framework for building web user interfaces.
   image:
-    file: ../../assets/houston.webp
+    file: ../../assets/logo.svg
   actions:
-    - text: Example Guide
-      link: /guides/example/
+    - text: Get Started
+      link: /getting_started/introduction
       icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
-      icon: external
-      variant: minimal
+    - text: Build with Vue
+      link: https://vuejs.org/guide/essentials
+      icon: right-arrow
+      variant: secondary
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
+import { LinkButton } from '@astrojs/starlight/components';
+import { Icon } from '@astrojs/starlight/components';
 
-## Next steps
 
-<CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
-	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
-	</Card>
-</CardGrid>
+<div class="flex items-center justify-center mt-[-20px] mb-[2em]">
+	<h1 class="text-[2.5rem]">Why Vue.js?</h1>
+</div>
+<div class="flex flex-row items-baseline justify-between gap-4">
+  <Card title="Approachable" icon="approve-check-circle" class="flex-1">
+    Builds on top of standard HTML, CSS and JavaScript with intuitive API and world-class documentation.
+  </Card>
+  <Card title="Performant" icon="approve-check-circle" class="flex-1">
+    Truly reactive, compiler-optimized rendering system that rarely requires manual optimization.
+  </Card>
+  <Card title="Versatile" icon="approve-check-circle" class="flex-1">
+    A rich, incrementally adoptable ecosystem that scales between a library and a full-featured framework.
+  </Card>
+</div>
+
+
+<div class="flex items-center justify-center mt-[5em] mb-[3em]">
+	<h1 class="text-[2.5rem]">Build with Vue.js</h1>
+</div>
+
+<div class="flex justify-between gap-4">
+  <div class="img w-[50%] border-1 border-gray-700 rounded-md">
+	![the Starlight Docs](../../assets/home/vue-components.png)
+  </div>
+  <Card title="Components In-Depth" class="w-[50%]">
+	Build reusable, modular UI elements with Vue components. 
+	This section explores advanced patterns like props, slots, 
+	custom events, and provides strategies for managing complex UIs efficiently.
+	<LinkButton
+		href="https://vuejs.org/guide/components"
+		variant="secondary"
+		icon="right-arrow"
+		iconPlacement="end"
+		>
+		Explore
+	</LinkButton>
+  </Card>
+</div>
+<div class="flex flex-row-reverse gap-4" >
+  <div class="img w-[600px] border-1 border-gray-700 rounded-md">
+	![the Starlight Docs](../../assets/home/vue-transitions.jpg)
+  </div>
+  <Card title="Built-in Components">
+    Explore Vue’s powerful built-in components like transition, keep-alive 
+	and teleport, to solve common UI challenges. These tools help manage state, 
+	animation, and DOM structure cleanly.
+	<LinkButton
+		href="https://vuejs.org/guide/built-ins/transition.html"
+		variant="secondary"
+		icon="right-arrow"
+		iconPlacement="end"
+		>
+		Explore
+	</LinkButton>
+  </Card>
+</div>
+<div class="flex gap-4">
+  <div class="img w-[600px] border-1 border-gray-700 rounded-md">
+  ![the Starlight Docs](../../assets/home/vue-reusability.jpg)
+  </div>
+  <Card title="Reusability">
+   Level up your app architecture by extracting and reusing logic through 
+   composables, custom directives, and plugins. Discover how to write clean, 
+   maintainable code across your Vue application.
+   <LinkButton
+		href="https://vuejs.org/guide/reusability/composables.html"
+		variant="secondary"
+		icon="right-arrow"
+		iconPlacement="end"
+		>
+		Explore
+	</LinkButton>
+  </Card>
+</div>
+
+<div>
+	<div class="column flex items-center bg-[#010101] p-6 mt-[5em] rounded-4">
+		<div class="column-1 p-[2em] w-[70%]">
+			<h1>Explore other Vue.js capabilities</h1>
+			<p>
+			Explore other powerful capabilities of Vue.js, 
+			including accessibility, security, and performance best 
+			practices to build inclusive, safe, and efficient applications. 
+			Dive into the glossary for quick concept references and follow 
+			industry-standard practices to elevate your development workflow.
+			</p>
+		</div>
+		<CardGrid>
+			<Card title="Scaling Up" icon="approve-check-circle">
+				Design your Vue app to scale seamlessly.
+				 <LinkButton
+					href="https://vuejs.org/guide/reusability/composables.html"
+					variant="secondary"
+					icon="right-arrow"
+					iconPlacement="end"
+					>
+					Explore
+				</LinkButton>
+			</Card>
+			<Card title="Best Practices" icon="approve-check-circle">
+				Follow established patterns and conventions to write clean, maintainable Vue code.
+				<LinkButton
+					href="https://vuejs.org/guide/reusability/composables.html"
+					variant="secondary"
+					icon="right-arrow"
+					iconPlacement="end"
+					>
+					Explore
+				</LinkButton>			
+			</Card>
+			<Card title="Typescript" icon="approve-check-circle">
+				Combine the flexibility of Vue with the safety of TypeScript.
+				<LinkButton
+					href="https://vuejs.org/guide/reusability/composables.html"
+					variant="secondary"
+					icon="right-arrow"
+					iconPlacement="end"
+					>
+					Explore
+				</LinkButton>			
+			</Card>
+			<Card title="Extra Topics" icon="approve-check-circle">
+				Enhance your development workflow with Vue’s ecosystem tools. 
+				<LinkButton
+					href="https://vuejs.org/guide/reusability/composables.html"
+					variant="secondary"
+					icon="right-arrow"
+					iconPlacement="end"
+					>
+					Explore
+				</LinkButton>	
+			</Card>
+		</CardGrid>
+	</div>
+</div>
+
+<div class="footer flex flex-col">
+	<div class="links flex flex-row items-start justify-between mt-[5em] text-gray-200">
+		<div class="About flex flex-col">
+			<h4 class="mb-[1em]">About</h4>
+			<a href="" class="no-underline">FAQ</a>
+			<a href="" class="no-underline">Team</a>
+			<a href="" class="no-underline">Releases</a>
+			<a href="" class="no-underline">Community Guide</a>
+			<a href="" class="no-underline">Privacy Policy</a>
+		</div>
+
+		<div class="learn-vue flex flex-col">
+			<h4 class="mb-[1em]">Learn Vue</h4>
+			<a href="" class="no-underline">Guide</a>
+			<a href="" class="no-underline">Tutorial</a>
+			<a href="" class="no-underline">Examples</a>
+			<a href="" class="no-underline">References</a>
+			<a href="" class="no-underline">Glossary</a>
+			</div>
+
+		<div class="Resources flex flex-col">
+			<h4 class="mb-[1em]">Resources</h4>
+			<a href="" class="no-underline">Partners</a>
+			<a href="" class="no-underline">Developers</a>
+			<a href="" class="no-underline">Themes</a>
+			<a href="" class="no-underline">UI Components</a>
+			<a href="" class="no-underline">Jobs</a>
+		</div>
+
+		<div class="Community flex flex-col">
+			<h4 class="mb-[1em]">Community</h4>
+			<a href="" class="no-underline">DEV Community</a>
+			<a href="" class="no-underline">GitHub Discussions</a>
+			<a href="" class="no-underline">Discord Chat</a>
+			<a href="" class="no-underline">Blog</a>
+			<a href="" class="no-underline">Newsletters</a>
+		</div>
+
+		<div class="Socials flex flex-row gap-3">
+			<a href="" class="no-underline"><Icon name="x.com" size="2rem" /></a>
+			<a href="" class="no-underline"><Icon name="github" size="2rem" /></a>
+			<a href="" class="no-underline"><Icon name="discord" size="2rem" /></a>
+		</div>
+	</div>
+</div>
